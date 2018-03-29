@@ -1,0 +1,2 @@
+image receive folder
+===

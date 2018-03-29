@@ -60,6 +60,7 @@ func (ss *server) onCStore(transferSyntaxUID string, sopClassUID string, sopInst
 			out.Close()
 		}
 	}()
+
 	e := dicomio.NewEncoderWithTransferSyntax(out, transferSyntaxUID)
 	dicom.WriteFileHeader(e,
 		[]*dicom.Element{
